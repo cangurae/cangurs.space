@@ -1,0 +1,198 @@
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    scrollbar-width: none;
+    position:fixed;
+}
+#container > * {
+  width:50%;
+}
+#container h3 {
+  color:lightblue;
+}
+.socials-icon {
+    width: 2em;
+    height: 2em;
+    object-fit: contain;
+}
+
+
+
+main {
+    font-size:1.15em;
+    display: none;
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+#container {
+  display:flex;
+  flex-direction:row;
+}
+
+main p {
+    margin: 10px auto;
+    max-width: 600px;
+}
+
+#subcontainer1 {
+  display:flex;
+  flex-direction:column;
+}
+
+#subcontainer2 {
+  display:flex;
+  flex-direction:column;
+}
+
+#subcontainer2 h4 {
+  display:flex;
+  flex-direction:row;
+  border: 1px grey solid;
+  margin:5px;
+}
+
+#subcontainer2 a {
+  text-decoration:none;
+  color:white;
+}
+
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4em;
+}
+
+
+h4 a {
+  text-decoration:none;
+  color:white;
+}
+
+.icon {
+    width: 2em;
+    height: 2em;
+    object-fit: contain;
+}
+
+ul li { 
+  list-style-type: none;
+}
+
+#titlename {
+    width: max-content;
+    font-size: 6.5em;
+    margin: 20px auto 0;
+    color: #fff;
+    background: linear-gradient(90deg, #fff 0%, #000000 16%, #fff 32%, #fff 48%, #000000 64%, #fff 85%, #000000 100%);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: titleGradient 3s linear infinite;
+}
+#title1 {
+  color:lightblue;
+  justify-content:center;
+  align-items: center;
+  display:flex;
+  font-size:1.5em;
+  margin-top:20px;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#overlayH1 {
+    font-size: 3em;
+    margin: 0;
+    display:flex;
+    flex-direction:row;
+}
+
+#overlayH2 {
+    animation:colorRotate 5s linear infinite;
+    margin-top: 50px;
+}
+
+@keyframes titleGradient {
+  from {
+    background-position: 100% 50%;
+  }
+  to {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes colorRotate {
+  from {
+    color: #000000;
+  }
+  0% {
+    color: #ffffff;
+  }
+  25% {
+    color: #000000;
+  }
+  50% {
+    color: #ffffff;
+  }
+  75% {
+    color: #000000;
+  }
+  100% {
+    color: #ffffff;
+  }
+}
+
+ul li a, span a {
+  font-size:10px;
+  color:white;
+  text-decoration:none;
+}
+
+footer {
+  color:white;
+  margin-top:-50px;
+  font-size:75%;
+  display:flex;
+  justify-content: right;
+}
+
+.overlay {
+  opacity: 1;
+  transition: opacity 600ms ease;
+}
+
+.overlay.is-hiding {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .overlay {
+    transition-duration: 600ms;
+  }
+}
+
+#discord {
+  cursor:pointer;
+}
+#discord sub {
+  font-size:10px;
+}
