@@ -5,7 +5,7 @@ function hideOverlay() {
     if (overlay.classList.contains('is-hiding')) return;
 
     const audio = new Audio('files/bgaudio.mp3');
-    audio.volume = 0.15;
+    audio.volume = 0.1;
     audio.play();
 
     overlay.classList.add('is-hiding');
