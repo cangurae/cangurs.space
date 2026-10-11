@@ -18,5 +18,5 @@ function hideOverlay() {
 
 function discord() {
     navigator.clipboard.writeText('490557374893916174')
-    alert('Copied user ID to clipbord!')
+    alert('Copied user ID to clipboard!')
 }
