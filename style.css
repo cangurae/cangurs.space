@@ -222,3 +222,65 @@ footer {
     font-style: normal;
     font-display: swap;
 }
+
+@media (max-width: 1000px) {
+  html {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    background: black;
+    scrollbar-width: auto;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: static;
+  }
+
+  #titlename {
+    font-size:3em;
+  }
+
+  body {
+    position: static;
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+    overflow-x: hidden;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-height: 900px) {
+  html {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    background: black;
+    scrollbar-width: auto;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: static;
+  }
+
+  body {
+    position: static;
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+    overflow-x: hidden;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
