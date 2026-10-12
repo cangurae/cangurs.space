@@ -1,0 +1,1 @@
+- fix audio being trimmed on low width (phones)
