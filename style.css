@@ -324,3 +324,9 @@ input[type="range"] {
     height: auto;
   }
 }
+@media (max-width: 850px) {
+    footer {
+      margin-top:-80px;
+    }
+}
+
