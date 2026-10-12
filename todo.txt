@@ -1,1 +1,2 @@
 - fix audio being trimmed on low width (phones)
+- add a custom cursor
