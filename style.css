@@ -230,8 +230,7 @@ footer {
     height: auto;
     min-height: 100%;
     background: black;
-    scrollbar-width: auto;
-    scroll-behavior: smooth;
+    scrollbar-width: none;
     overflow-y: auto;
     overflow-x: hidden;
     position: static;
@@ -245,8 +244,8 @@ footer {
     position: static;
     height: auto;
     min-height: 100vh;
-    overflow: visible;
-    overflow-x: hidden;
+    overflow-x: clip;
+    overflow-y: visible;
   }
 
   #container {
@@ -263,8 +262,7 @@ footer {
     height: auto;
     min-height: 100%;
     background: black;
-    scrollbar-width: auto;
-    scroll-behavior: smooth;
+    scrollbar-width: none;
     overflow-y: auto;
     overflow-x: hidden;
     position: static;
@@ -274,8 +272,8 @@ footer {
     position: static;
     height: auto;
     min-height: 100vh;
-    overflow: visible;
-    overflow-x: hidden;
+    overflow-x: clip;
+    overflow-y: visible;
   }
 
   #container {
