@@ -322,15 +322,16 @@ input[type="range"] {
 
 @media (max-width: 750px) {
   #audio {
-    width: max-content;
-    max-width: none;
+    width: 25em;
     align-self: center;
     height: auto;
+    text-wrap:wrap;
   }
+
 }
 @media (max-width: 850px) {
     footer {
-      margin-top:-80px;
+      margin-top:-150px;
     }
 }
 
